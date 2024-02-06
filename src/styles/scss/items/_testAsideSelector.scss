@@ -1,0 +1,15 @@
+aside ul {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+aside li {
+    transition: transform 0.15s ease;
+    display: inline-block;
+}
+
+aside li:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}

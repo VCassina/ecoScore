@@ -1,0 +1,19 @@
+@testing-library/est-dom A library of custom jest matchers that you can use to the DOM.
+testing-library/: A library of utilities to test React components.
+@testing-library/user-event: A library of utilities to simulate user events in tests.
+express: A web framework for Node.js.
+gh-pages: A package to deploy your site to GitHub Pages.
+react: A JavaScript library for building user interfaces.
+react-dom: A package that lets you render React components to the DOM.
+react-router-dom: A package that lets you add routing to your React application.
+react-scripts: A collection of scripts and configuration files for creating a React application.
+web-vitals: A library to measure web performance metrics.
+zustand: A small, fast and flexible state management solution for React.
+sass: A script to compile SASS files to CSS.
+start: A script to start the development server.
+build: A script to build the production version of the application.
+test: A script to run tests.
+eject: A script to eject from the create-react-app configuration.
+predeploy: A script to build the application before deploying.
+deploy: A script to deploy the application to GitHub Pages.
+fontawesome : A database for icons.
