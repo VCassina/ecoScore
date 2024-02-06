@@ -1,5 +1,6 @@
 import React from "react";
 import TestAsideSelector from "../items/testAsideSelector";
+import TestAnswerSelector from "../items/testAnswerSelector";
 
 function Test() {
   return (
@@ -8,6 +9,7 @@ function Test() {
         <div>1/7</div>
         <article>
           <p>Polluez-vous, hein !? SALE BÂTARD !!</p>
+          <TestAnswerSelector />
         </article>
       </div>
       <TestAsideSelector />
