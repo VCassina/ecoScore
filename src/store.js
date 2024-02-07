@@ -11,7 +11,11 @@ export const useStore = create((set) => ({
 
   // Maping dynamique de valeur commune selon la taille du JSON.
   scores: new Array(data.questions.length).fill(0),
- // Puis action de venir les modifier par slot avec le slot et le montant.
- updateScoreSlot: (slotIndex, amount) =>
-    set((state) => ({ scores: state.scores.map((slot, index) => (index === slotIndex ? amount : slot)) }))
+  // Puis action de venir les modifier par slot avec le slot et le montant.
+  updateScoreSlot: (slotIndex, amount) =>
+    set((state) => ({
+      scores: state.scores.map((slot, index) =>
+        index === slotIndex ? amount : slot
+      ),
+    })),
 }));

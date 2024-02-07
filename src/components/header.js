@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Logo from "../assets/pngtree-green-leaves-vector-icon-design-on-white-background-various-shapes-of-png-image_1870597-removebg-preview.png";
+
 function Header() {
   return (
     <header>
@@ -10,13 +12,13 @@ function Header() {
       <nav>
         <ul>
           <li>
-            <a href="#">Test</a>
+            <Link to="/">Test</Link>
           </li>
           <li>
-            <a href="#">Astuces</a>
+            <Link to="/astuces">Astuces</Link>
           </li>
           <li>
-            <a href="#">Classements</a>
+            <Link to="/classement">Classement</Link>
           </li>
         </ul>
       </nav>

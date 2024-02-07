@@ -6,7 +6,6 @@ import { useStore } from "../store";
 import TestResults from "./testResults";
 
 function Test() {
- 
   const {
     currentQuestionIndex,
     incrementCurrentQuestionIndex,
@@ -19,7 +18,23 @@ function Test() {
     decrementCurrentQuestionIndex();
     updateScoreSlot(currentQuestionIndex - 2, 0);
   };
+
   console.log(scores)
+  
+  const scoreMax = Object.keys(data.points)
+    .filter((key) => /^\d+$/.test(key))
+    .reduce((maxSum, key) => {
+      const maxPoints = Math.max(...data.points[key]);
+      return maxSum + maxPoints;
+    }, 0);
+
+  const scoreMin = Object.keys(data.points)
+    .filter((key) => /^\d+$/.test(key))
+    .reduce((minSum, key) => {
+      const minPoints = Math.min(...data.points[key]);
+      return minSum + minPoints;
+    }, 0);
+
   return (
     <section>
       {currentQuestionIndex < data.questions.length + 1 ? (
@@ -46,6 +61,8 @@ function Test() {
         <TestResults
           setCurrentQuestionIndex={setCurrentQuestionIndex}
           scoresSlots={scores}
+          scoreMax={scoreMax}
+          scoreMin={scoreMin}
         />
       )}
 
