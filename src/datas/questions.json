@@ -1,0 +1,32 @@
+{
+    "questions": [
+      "Consommez vous viande ?",    
+      "Prenez vous les transports individu a energie fossile ?",
+      "Prenez vous l'avion ?",
+      "Achetez vous des vêtements neufs ?",
+      "Mangez vous local et de saison ?",
+      "Consommez vous beaucoup d'électricité ?",
+      "Triez-vous vos déchets et surveillez vous votre consommation d'emballage ?",
+      "Prevoyez-vous ou avez vous des enfants ?"
+    ],
+    "answers": {
+      "1": ["Réguliérement", "Occasionnellement", "Rarement", "Jamais"],
+      "2": ["Réguliérement", "Occasionnellement", "Rarement", "Jamais"],
+      "3": ["Réguliérement", "Occasionnellement", "Rarement", "Jamais"],
+      "4": ["Réguliérement", "Occasionnellement", "Rarement", "Jamais"],
+      "5": ["Réguliérement", "Occasionnellement", "Rarement", "Jamais"],
+      "6": ["Oui", "Plutôt", "Peu", "Pas du tout"],
+      "7": ["Oui", "Plutôt", "Peu", "Pas du tout"],
+      "8": ["2 et +", "2", "1", "Non"]
+    },
+    "points": {
+        "1": [8, 6, 3, 0],
+        "2": [6, 4, 2, 0],
+        "3": [10, 7, 2, 0],
+        "4": [8, 4, 2, 0],
+        "5": [6, 4, 2, 0],
+        "6": [5, 3, 1, 0],
+        "7": [1, 2, 4, 6],
+        "8": [20, 14, 6, -10]
+    }
+  }

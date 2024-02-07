@@ -13,3 +13,9 @@ aside li:hover {
     cursor: pointer;
     transform: scale(1.2);
 }
+
+aside li.unclickable {
+    cursor: default;
+    transform: scale(1);
+  
+}

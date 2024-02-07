@@ -6,4 +6,8 @@ section {
         padding: 10px;
         box-shadow: inset 0 0 4px rgba($color: #000000, $alpha: 1.0);
     }
+    .selected {
+        scale: (1.5);
+        color: yellow;
+    }
 }

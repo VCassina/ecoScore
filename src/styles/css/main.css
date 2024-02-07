@@ -20,6 +20,10 @@ section div, section article, section aside {
   padding: 10px;
   box-shadow: inset 0 0 4px black;
 }
+section .selected {
+  scale: 1.5;
+  color: yellow;
+}
 
 footer {
   background-color: rgb(230, 108, 38);
@@ -40,6 +44,11 @@ aside li {
 aside li:hover {
   cursor: pointer;
   transform: scale(1.2);
+}
+
+aside li.unclickable {
+  cursor: default;
+  transform: scale(1);
 }
 
 /*# sourceMappingURL=main.css.map */
