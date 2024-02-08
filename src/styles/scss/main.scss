@@ -1,3 +1,8 @@
+
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
+
 @import "utils/_variables.scss";
 @import "utils/_mixins.scss";
 @import "base/_normalise.scss";
@@ -9,4 +14,4 @@
 @import "components/_header.scss";
 @import "components/_test.scss";
 @import "components/_footer.scss";
-@import "items/_testAsideSelector.scss";
+@import "items/_testAsideSelector.scss"; 

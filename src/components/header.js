@@ -4,21 +4,23 @@ import Logo from "../assets/pngtree-green-leaves-vector-icon-design-on-white-bac
 
 function Header() {
   return (
-    <header>
-      <article>
-        <img src={Logo} alt="Logo" />
+    <header className="flex justify-center p-4">
+      <article className="w-full w-4/5 flex items-center space-x-4 text-center text-white text-xl">
+      <div className="rounded-full bg-white h-16 w-16 mr-2 flex items-center justify-center">
+          <img src={Logo} alt="Logo" className="h-10" />
+        </div>
         <p>Ecoscore</p>
       </article>
       <nav>
-        <ul>
+      <ul>
           <li>
-            <Link to="/">Test</Link>
+            <Link to="/" className="px-2">Test</Link>
           </li>
           <li>
-            <Link to="/astuces">Astuces</Link>
+            <Link to="/astuces" className="px-2">Astuces</Link>
           </li>
           <li>
-            <Link to="/classement">Classement</Link>
+            <Link to="/classement" className="px-2">Classement</Link>
           </li>
         </ul>
       </nav>

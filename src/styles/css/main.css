@@ -1,14 +1,8 @@
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
 .welcome-container {
   background-color: red;
-}
-
-header {
-  background-color: rgb(42, 223, 42);
-  box-shadow: inset 0 0 4px black;
-  padding: 10px;
-}
-header nav, header article {
-  box-shadow: inset 0 0 4px black;
 }
 
 section {
