@@ -1,2 +1,18 @@
-// header {
-// }
+.mobileNav {
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease-out, opacity 0.25s linear;
+  }
+  
+  .mobileMasked {
+    opacity: 1;
+    max-height: 100vh; /* ou la hauteur nécessaire */
+    transition: max-height 0.25s ease-in, opacity 0.25s linear;
+  }
+  
+
+header .chevron {
+    font-size: xx-large;
+    cursor: pointer;
+}
