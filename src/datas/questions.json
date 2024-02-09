@@ -9,6 +9,16 @@
       "Triez-vous vos déchets et surveillez vous votre consommation d'emballage ?",
       "Prevoyez-vous ou avez vous des enfants ?"
     ],
+    "subjects": [
+      "Viande",    
+      "Transports",
+      "Avion",
+      "Vêtements",
+      "Local",
+      "Electricité",
+      "Déchets",
+      "Famille"
+    ],
     "answers": {
       "1": ["Réguliérement", "Occasionnellement", "Rarement", "Jamais"],
       "2": ["Réguliérement", "Occasionnellement", "Rarement", "Jamais"],

@@ -20,9 +20,9 @@ function TestResults({ setCurrentQuestionIndex, scoresSlots, scoreMax, scoreMin}
   }
 
   return (
-    <section>
+    <section className="flex flex-col gap-6">
       <p>Votre score total est de :</p>
-      <p>{(100 - percentage).toFixed(2)}%</p>
+      <p className="border-b-2">{(100 - percentage).toFixed(2)}%</p>
       <p>{comment}</p>
       <p onClick={() => setCurrentQuestionIndex(1)}> Refaire le test</p>
     </section>

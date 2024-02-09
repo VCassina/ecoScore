@@ -8,7 +8,7 @@ module.exports = {
         gold: '#FF9843',
         light: '#FFDD95',
         flaque: '#86A7FC',
-        lagon: '#3468C0'
+        lagon: '#3468C0',
       },
     },
   },

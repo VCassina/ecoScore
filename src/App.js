@@ -8,7 +8,9 @@ function App() {
   return (
     <>
       <Header />
-      <Routes />
+      <div className="w-full mx-auto">
+        <Routes />
+      </div>
       <Footer />
     </>
   );

@@ -5,23 +5,8 @@
   background-color: red;
 }
 
-section {
-  background-color: rgb(127, 104, 189);
-  box-shadow: inset 0 0 4px black;
-  padding: 10px;
-}
-section div, section article, section aside {
-  padding: 10px;
-  box-shadow: inset 0 0 4px black;
-}
-section .selected {
-  scale: 1.5;
-  color: yellow;
-}
-
 footer {
   background-color: rgb(230, 108, 38);
-  box-shadow: inset 0 0 4px black;
 }
 
 aside ul {
@@ -33,16 +18,28 @@ aside ul {
 aside li {
   transition: transform 0.15s ease;
   display: inline-block;
+  display: flex;
+  align-items: center;
 }
 
-aside li:hover {
+.answers li:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
-aside li.unclickable {
-  cursor: default;
-  transform: scale(1);
+aside input {
+  appearance: none;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  border: 2px solid rgb(202, 202, 42);
+  background-color: rgb(202, 202, 42);
+  justify-content: center;
+}
+
+.selected {
+  background-color: rgb(202, 202, 42);
+  transform: scale(1.75);
 }
 
 /*# sourceMappingURL=main.css.map */

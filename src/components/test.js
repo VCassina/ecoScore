@@ -19,8 +19,6 @@ function Test() {
     updateScoreSlot(currentQuestionIndex - 2, 0);
   };
 
-  console.log(scores)
-  
   const scoreMax = Object.keys(data.points)
     .filter((key) => /^\d+$/.test(key))
     .reduce((maxSum, key) => {
@@ -36,14 +34,18 @@ function Test() {
     }, 0);
 
   return (
-    <section>
+    <section className="p-4 m-4 flex flex-col gap-8">
       {currentQuestionIndex < data.questions.length + 1 ? (
-        <div>
-          <div className="compter">
-            {currentQuestionIndex}/{data.questions.length}
+        <div className="flex flex-col gap-4">
+          <div className="compter flex flex-row border-b-2 justify-between space-x-2 items-center h-20">
+            <p>
+              {currentQuestionIndex}/{data.questions.length}
+            </p>
+            <p className="flex-1 text-center">
+              {data.questions[currentQuestionIndex - 1]}
+            </p>
           </div>
-          <article>
-            <p>{data.questions[currentQuestionIndex - 1]}</p>
+          <article className="flex flex-col gap-4">
             <TestAnswerSelector
               data={data}
               currentQuestionIndex={currentQuestionIndex}
