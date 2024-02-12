@@ -26,11 +26,11 @@ function Header() {
 
   return (
     <header className="flex justify-center">
-      <article>
+      <article className="w-full p-4 h-40">
         {commonHeaderContent}
         {isMobile === "desktop" && (
           <nav className="absolute right-5 flex-1">
-            <ul className="flex">
+            <ul className="flex ">
               <li>
                 <Link to="/" className="px-2">
                   Test
@@ -51,7 +51,7 @@ function Header() {
         )}
         {isMobile === "mobile" && (
           <nav className={`mobileNav ${showMobileNav ? "mobileMasked" : ""}`}>
-            <ul className="flex">
+            <ul className="flex justify-evenly m-4">
               <li>
                 <Link to="/" className="px-2">
                   Test
