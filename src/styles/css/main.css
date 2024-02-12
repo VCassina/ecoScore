@@ -2,6 +2,12 @@
 @import "tailwindcss/base.css";
 @import "tailwindcss/components.css";
 @import "tailwindcss/utilities.css";
+main {
+  overflow-x: hidden;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 .welcome-container {
   background-color: red;
 }
@@ -24,10 +30,6 @@ header .chevron {
   cursor: pointer;
 }
 
-footer {
-  background-color: rgb(230, 108, 38);
-}
-
 aside ul {
   display: flex;
   flex-direction: column;
@@ -43,7 +45,7 @@ aside li {
 
 .answers li:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.015);
 }
 
 aside input {
@@ -58,7 +60,7 @@ aside input {
 
 .selected {
   background-color: rgb(202, 202, 42);
-  transform: scale(1.75);
+  transform: scale(1.25);
 }
 
 /*# sourceMappingURL=main.css.map */

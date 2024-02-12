@@ -13,7 +13,7 @@ aside li {
 
 .answers li:hover {
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.015);
 }
 
 aside input {
@@ -24,9 +24,9 @@ aside input {
     border: 2px solid rgb(202, 202, 42);
     background-color: rgb(202, 202, 42);
     justify-content: center;
-  }
+}
 
-  .selected {
+.selected {
     background-color: rgb(202, 202, 42);
-    transform: scale(1.75);
-  }
+    transform: scale(1.25);
+}

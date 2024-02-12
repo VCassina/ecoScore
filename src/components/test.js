@@ -4,8 +4,11 @@ import TestAnswerSelector from "./testAnswerSelector";
 import data from "../datas/questions.json";
 import { useStore } from "../store";
 import TestResults from "./testResults";
+import useIsMobile from "../helpers/useIsMobile.js";
 
 function Test() {
+  const isMobile = useIsMobile();
+
   const {
     currentQuestionIndex,
     incrementCurrentQuestionIndex,
@@ -13,7 +16,10 @@ function Test() {
     setCurrentQuestionIndex,
     scores,
     updateScoreSlot,
+    resultScreen,
+    setResultScreen
   } = useStore();
+
   const handleReturnClick = () => {
     decrementCurrentQuestionIndex();
     updateScoreSlot(currentQuestionIndex - 2, 0);
@@ -34,9 +40,13 @@ function Test() {
     }, 0);
 
   return (
-    <section className="p-4 m-4 flex flex-col gap-8">
+<section
+  className={`p-4 m-4 ${
+    isMobile === "mobile" ? "flex flex-col" : "flex"
+  } gap-8 ${resultScreen === 1 ? "justify-center" : "justify-between"}`}
+>
       {currentQuestionIndex < data.questions.length + 1 ? (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 justify-evenly">
           <div className="compter flex flex-row border-b-2 justify-between space-x-2 items-center h-20">
             <p>
               {currentQuestionIndex}/{data.questions.length}
@@ -52,12 +62,12 @@ function Test() {
               onAnswerClick={incrementCurrentQuestionIndex}
               updateScoreSlot={updateScoreSlot}
             />
-            {currentQuestionIndex !== 1 && (
-              <p className="return" onClick={handleReturnClick}>
-                Retour{" "}
-              </p>
-            )}
           </article>
+          {currentQuestionIndex !== 1 && (
+            <p className="return" onClick={handleReturnClick}>
+              Retour{" "}
+            </p>
+          )}
         </div>
       ) : (
         <TestResults
@@ -65,14 +75,14 @@ function Test() {
           scoresSlots={scores}
           scoreMax={scoreMax}
           scoreMin={scoreMin}
+          setResultScreen={setResultScreen}
         />
       )}
 
-      <TestAsideSelector
+      {resultScreen === 0 && <TestAsideSelector
         data={data}
         currentQuestionIndex={currentQuestionIndex}
-        setCurrentQuestionIndex={setCurrentQuestionIndex}
-      />
+      />}
     </section>
   );
 }

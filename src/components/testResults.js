@@ -1,8 +1,9 @@
 import React from "react"
 
-function TestResults({ setCurrentQuestionIndex, scoresSlots, scoreMax, scoreMin}) {
+function TestResults({ setCurrentQuestionIndex, scoresSlots, scoreMax, scoreMin, resultScreen, setResultScreen}) {
   const scoreResult = scoresSlots.reduce((sum, score) => sum + score, 0);
   const percentage = ((scoreResult - scoreMin) / (scoreMax - scoreMin)) * 100;
+
 
   let comment = "";
   if (percentage >= 0 && percentage <= 10) {
@@ -19,12 +20,16 @@ function TestResults({ setCurrentQuestionIndex, scoresSlots, scoreMax, scoreMin}
     comment = "Il faut faire des efforts d'urgence !!";
   }
 
+  React.useEffect(() => {
+    setResultScreen(1)
+  }, [percentage, setResultScreen])
+
   return (
-    <section className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6 text-center">
       <p>Votre score total est de :</p>
       <p className="border-b-2">{(100 - percentage).toFixed(2)}%</p>
       <p>{comment}</p>
-      <p onClick={() => setCurrentQuestionIndex(1)}> Refaire le test</p>
+      <p onClick={() => { setCurrentQuestionIndex(1); setResultScreen(0); }}> Refaire le test</p>
     </section>
   );
 }

@@ -9,6 +9,10 @@ export const useStore = create((set) => ({
     set((state) => ({ currentQuestionIndex: state.currentQuestionIndex - 1 })),
   setCurrentQuestionIndex: (index) => set({ currentQuestionIndex: index }),
 
+  resultScreen: 0,
+  setResultScreen: (value) =>
+  set((state) => ({ resultScreen: value})),
+
   // Maping dynamique de valeur commune selon la taille du JSON.
   scores: new Array(data.questions.length).fill(0),
   // Puis action de venir les modifier par slot avec le slot et le montant.
