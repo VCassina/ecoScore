@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/ecoScore/static/css/main.84344724.css",
+    "main.js": "/ecoScore/static/js/main.38cd7768.js",
+    "static/js/592.a47446ce.chunk.js": "/ecoScore/static/js/592.a47446ce.chunk.js",
+    "static/media/logo.png": "/ecoScore/static/media/logo.b7383b93be99e46ba196.png",
+    "index.html": "/ecoScore/index.html",
+    "main.84344724.css.map": "/ecoScore/static/css/main.84344724.css.map",
+    "main.38cd7768.js.map": "/ecoScore/static/js/main.38cd7768.js.map",
+    "592.a47446ce.chunk.js.map": "/ecoScore/static/js/592.a47446ce.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.84344724.css",
+    "static/js/main.38cd7768.js"
+  ]
+}
