@@ -7,9 +7,9 @@ import RankPage from "./pages/rankPage.js";
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/astuces" element={<TipsPage />} />
-      <Route path="/classement" element={<RankPage />} />
+      <Route path="/EcoScore" element={<HomePage />} />
+      <Route path="/Astuces" element={<TipsPage />} />
+      <Route path="/Classement" element={<RankPage />} />
     </Routes>
   );
 }

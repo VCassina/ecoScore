@@ -16,17 +16,17 @@ function headerDesktop() {
           <nav className="">
             <ul className="flex">
               <li>
-                <Link to="/" className="px-2">
+                <Link to="/EcoScore" className="px-2">
                   Test
                 </Link>
               </li>
               <li>
-                <Link to="/astuces" className="px-2">
+                <Link to="/Astuces" className="px-2">
                   Astuces
                 </Link>
               </li>
               <li>
-                <Link to="/classement" className="px-2">
+                <Link to="/Classement" className="px-2">
                   Classement
                 </Link>
               </li>
