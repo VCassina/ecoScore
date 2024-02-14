@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/ecoScore/static/css/main.6528ab66.css",
-    "main.js": "/ecoScore/static/js/main.599aaae1.js",
+    "main.js": "/ecoScore/static/js/main.241b792e.js",
     "static/js/592.a47446ce.chunk.js": "/ecoScore/static/js/592.a47446ce.chunk.js",
     "static/media/logo.png": "/ecoScore/static/media/logo.b7383b93be99e46ba196.png",
     "index.html": "/ecoScore/index.html",
     "main.6528ab66.css.map": "/ecoScore/static/css/main.6528ab66.css.map",
-    "main.599aaae1.js.map": "/ecoScore/static/js/main.599aaae1.js.map",
+    "main.241b792e.js.map": "/ecoScore/static/js/main.241b792e.js.map",
     "592.a47446ce.chunk.js.map": "/ecoScore/static/js/592.a47446ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6528ab66.css",
-    "static/js/main.599aaae1.js"
+    "static/js/main.241b792e.js"
   ]
 }
